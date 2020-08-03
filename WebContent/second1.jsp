@@ -4,15 +4,16 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>Day9-2</title>
 </head>
 <body>
-	<h1>Hello index_ok.jsp!</h1>
-	
-	<br>
-	<%
-		String uname = request.getParameter("uname");
-		out.println("Welcome, " + uname + "!");
-	%>
+<html>  
+<body>  
+	<%   
+		String name=(String)session.getAttribute("user");  
+		out.print("Hello "+name);    
+	%>  
+</body>  
+</html>  
 </body>
 </html>
