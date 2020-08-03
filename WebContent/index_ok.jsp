@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Hello new!</h1>
+	<h1>Hello index_ok.jsp!</h1>
+	
+	<br>
+	<%
+		String uname = request.getParameter("uname");
+		out.println("Welcome, " + uname + "!");
+	%>
 </body>
 </html>
